@@ -1,2 +1,2 @@
 #!/bin/bash
-| `3-paths` | Counts the number of the directories in the `PATH` |
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
